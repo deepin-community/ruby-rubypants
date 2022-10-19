@@ -1,0 +1,50 @@
+ruby-rubypants (0.6.0-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 01:29:03 +0100
+
+ruby-rubypants (0.6.0-1) unstable; urgency=medium
+
+  [ Jérémy Bobbio ]
+  * Team upload.
+  * New upstream version 0.6.0.
+  * Fix debian/watch to point to the right gem.
+  * Use updated Jeremy McNevin's repository as new upstream.
+  * Update debian/copyright.
+  * Sync packaging with new upstream.
+  * Add new patch to remove unneeded test dependencies.
+  * Update test path in debian/ruby-tests.rb.
+  * Remove problematic Suggests.
+  * Allow tests to run with autopkgtest.
+  * Bump Standards-Version, no changes required.
+
+  [ Cédric Boutillier ]
+  * Remove version in the gem2deb build-dependency.
+  * Use https:// in Vcs-* fields.
+  * Use https:// in Vcs-* fields.
+  * Bump Standards-Version to 3.9.7 (no changes needed).
+  * Run wrap-and-sort on packaging files.
+
+ -- Jérémy Bobbio <lunar@debian.org>  Wed, 30 Nov 2016 19:34:13 +0100
+
+ruby-rubypants (0.2.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add git-buildpackage configuration.
+  * Add a patch to add gem metadata for proper integration.
+  * Remove documentation package.
+  * Update watch file to use gemwatch.
+  * Switch to debhelper compat level 9.
+  * Update Vcs-* URL.
+  * Use the correct short name for the license in debian/copyright.
+  * Bump Standards-Version, no changes required.
+
+ -- Jérémy Bobbio <lunar@debian.org>  Wed, 16 Sep 2015 23:14:14 +0200
+
+ruby-rubypants (0.2.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #703275)
+
+ -- Per Andersson <avtobiff@gmail.com>  Wed, 05 Jun 2013 23:41:52 +0200

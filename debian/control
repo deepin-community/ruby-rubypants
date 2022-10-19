@@ -1,0 +1,25 @@
+Source: ruby-rubypants
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Per Andersson <avtobiff@gmail.com>
+Build-Depends: debhelper (>= 9),
+               gem2deb
+Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-rubypants.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-rubypants.git
+Homepage: https://github.com/jmcnevin/rubypants/
+XS-Ruby-Versions: all
+
+Package: ruby-rubypants
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Ruby port of SmartyPants smart-quotes library
+ RubyPants is a Ruby port of the smart-quotes library SmartyPants.
+ .
+ The original "SmartyPants" is a free web publishing plug-in for Movable Type,
+ Blosxom, and BBEdit that easily translates plain ASCII punctuation characters
+ into "smart" typographic punctuation HTML entities.

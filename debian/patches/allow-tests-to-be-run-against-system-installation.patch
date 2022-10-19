@@ -1,0 +1,31 @@
+From: =?utf-8?q?J=C3=A9r=C3=A9my_Bobbio?= <lunar@debian.org>
+Date: Wed, 30 Nov 2016 19:24:22 +0100
+Subject: Allow tests to be run against system installation
+
+---
+ Rakefile               | 2 +-
+ test/rubypants_test.rb | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Rakefile b/Rakefile
+index 99c8dd3..0ff4b6d 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -3,5 +3,5 @@ task :default => [:test]
+ 
+ desc "Run all the tests"
+ task :test do
+-  ruby 'test/rubypants_test.rb'
++  ruby -Ilib 'test/rubypants_test.rb'
+ end
+diff --git a/test/rubypants_test.rb b/test/rubypants_test.rb
+index 3c8d886..9547963 100644
+--- a/test/rubypants_test.rb
++++ b/test/rubypants_test.rb
+@@ -1,5 +1,5 @@
+ require 'minitest/autorun'
+-require_relative '../lib/rubypants'
++require 'rubypants'
+ 
+ # Test EVERYTHING against SmartyPants.pl output!
+ 

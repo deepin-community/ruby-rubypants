@@ -1,0 +1,14 @@
+Document: ruby-rubypants-doc
+Title: Debian ruby-rubypants Manual
+Author: Christian Neukirchen
+Abstract: Ruby port of SmartyPants smart-quotes library
+ RubyPants is a Ruby port of the smart-quotes library SmartyPants.
+ .
+ The original "SmartyPants" is a free web publishing plug-in for Movable Type,
+ Blosxom, and BBEdit that easily translates plain ASCII punctuation characters
+ into "smart" typographic punctuation HTML entities.
+Section: Programming/Ruby
+
+Format: HTML
+Index: /usr/share/doc/ruby-rubypants-doc/html/index.html
+Files: /usr/share/doc/ruby-rubypants-doc/html/*
